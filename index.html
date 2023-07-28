@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Bodoni Moda', serif;
+} 
+.main-box{
+    background: url("./camera-photograph-camera-in-a-camera.jpg");
+    background-size: contain;
+    height: 100vh;
+}
+.btn-one{
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+.side-menu{
+ position: fixed;
+ line-height:12px ;
+  left: -350px; 
+ height: 100vh;
+ width: 300px;
+ background-color: rgba(255,255,255,0.12);
+ box-shadow: 0 0 9px  rgba(255,255,255,0.6);
+ transition: all 0.55s ease-in-out;
+}
+.side-menu .logo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    line-height: 60px;
+}
+.side-menu .logo a{
+text-decoration: none;
+color: white;
+position: absolute;
+left: 70px;
+font-size: 30px;
+}
+.btn-two{
+    color:grey;
+    position: absolute;
+    top: 1px;
+    font-size: 30px;
+    line-height: 60px;
+    left: 270px;
+    opacity:1;
+}
+.btn-two i:hover{
+    font-size: 33px;
+    cursor:pointer;
+}
+.btn-one i{
+    transition: all 0.4s ease-in;
+}
+.btn-two i{
+    transition: all 0.4s ease-in; 
+}
+.btn-one i:hover{
+    cursor: pointer;
+    font-size: 36px;
+}
+.side-menu .menu{
+    color: white;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+
+}
+.side-menu .menu li{
+    margin-top: 14px;
+    padding: 10px 20px;
+}
+.side-menu .menu li a{
+  text-decoration:none ;
+  color: white;
+  font-size: 20px;
+  padding-left: 7px;
+
+}
+.side-menu .social-media {
+    
+    position: absolute;
+    top: 420px;
+    left: 15%;
+}
+.side-menu .social-media li{
+    list-style: none;
+}
+.side-menu .social-media i{
+    color: white;
+    opacity: 0.5;
+    padding-inline: 3px;
+}
+.side-menu .social-media i:hover{
+    opacity:1;
+    transform: scale(1.2);
+}
+.side-menu .menu li:hover{
+    box-shadow: 0 0 9px  rgba(255,255,255,0.6) ;
+}
+#check{
+     display: none;
+}
+#check:checked~.side-menu{
+  left: 0;
+}
+#check:checked~.btn-one{
+ opacity: 0;
+}
+
+</style>
+<body>
+    <div class="main-box">
+        <input type="checkbox" name="" id="check">
+        <div class="btn-one">
+          <label for="check"><i class="fa-sharp fa-solid fa-bars"></i></label>
+        </div>
+
+        <div class="side-menu">
+            <div class="logo">
+                <a href="#">PhotoCops</a>
+            </div>
+        <div class="btn-two">
+            <label for="check"><i class="fa-sharp fa-solid fa-xmark"></i></label>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <i class="fa-sharp fa-solid fa-image"></i>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                    <a href="#">ShortCut</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-photo-film"></i>
+                    <a href="#">Exhibits</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-calendar-days"></i>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-store"></i>
+                    <a href="#">Store</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                    <a href="#">Contacts</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-comments"></i>
+                    <a href="#">FeedBacks</a>
+                </li>
+            </ul>
+               
+               <div class="social-media">
+                <ul>
+                    <li>
+                     <a href=""><i class="fa-brands fa-facebook"></i></a>   
+                     <a href=""><i class="fa-brands fa-twitter"></i></a>   
+                     <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                     <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+               </div> 
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;align-items: center;" class="cont">
+         <h1 style="color: white; margin-top: 205px; margin-left: 130px; font-size: 100px;">PhotoGraphy</h1>
+        </div>
+    </div>
+
+</body>
+    <script src="https://kit.fontawesome.com/48675d4bb5.js" crossorigin="anonymous"></script>
+</html>
